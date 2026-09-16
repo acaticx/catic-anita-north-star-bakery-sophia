@@ -1,0 +1,151 @@
+/*overall page design */
+
+body {
+    margin: 0;
+    background-color: #f7f0e3;
+    font-family: "Arial Narrow", sans-serif;
+    line-height: 1.6;
+}
+
+/* header */
+
+header {
+    background-color: #3e2c20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    max-width: 300px;
+    height: auto;
+}
+
+header h1 {
+    font-family: "Times New Roman", serif;
+    margin: 10px 0 0;
+}
+
+
+/* navigation */
+
+nav {
+    background-color: #d4b483;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color:#3e2c20;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* main content */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* images */
+
+img {
+    max-width: 90%;
+    height: auto;
+    border: 8px double rgb(171, 72, 87);
+    border-radius: 10px;
+}
+
+picture {
+    display: block;
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border: 2px double #3e2c20;
+    border-radius: 8px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 2px dotted #3e2c20;
+}
+section p {
+    margin-bottom: 15px;
+}
+section ul {
+    padding-left: 25px;
+}
+
+
+/* headings */
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #3e2c20;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color:#3e2c20;
+}
+
+/* link interaction */
+
+nav a:hover {
+    color: rgb(171, 72, 87);
+}
+
+
+/* larger screens */
+
+input,
+textarea {
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 1rem;
+    padding: 8px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+fieldset{ 
+    border: 6px double rgb(171, 72, 87);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+legend {
+    font-family: "Times New Roman", Times, serif;
+    color: #3e2c20;
+}
+@media (min-width: 700px) {
+    nav ul {
+        gap: 25px;
+    }
+    main {
+        padding: 40px 30px;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery | Contact</title>
+        <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/bakery-logo_c.png" alt="North Star Bakery logo" width="400">
+        <h1>Contact North Star Bakery</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Visit Us</h2>
+
+            <p>
+                Location: 123 North Star Avenue, New York, NY
+            </p>
+
+            <p>
+                Hours: Monday through Saturday, 7:00 AM–6:00 PM
+            </p>
+
+            <p>  For pre-orders, please submit your request at least two days
+    before your desired pickup date.
+</p>
+        </section>
+
+        <section>
+            <h2>Inquiry or Pre-Order Request</h2>
+
+            <p>
+                Use the form below to ask a question or request a
+                pre-order. We will follow up with you about your request.
+            </p>
+
+            <form>
+
+                <fieldset>
+                    <legend>Customer Information</legend>
+
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="pickup-date">Pickup Date:</label>
+                        <input type="date" id="pickup-date" name="pickup-date" required>
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Request Details</legend>
+
+                    <p>
+                        <label>
+                            <input type="radio" name="request-type" value="pre-order" required>
+                            Pre-order
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input type="radio" name="request-type" value="general-question">
+                            General question
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="item-details">Item Details:</label>
+                        <br>
+                        <textarea id="item-details" name="item-details" rows="5" cols="40" required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="allergy-notes">Allergy Notes, if applicable:</label>
+                        <br>
+                        <textarea id="allergy-notes" name="allergy-notes" rows="4" cols="40"></textarea>
+                    </p>
+
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Request</button>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p> 2026 North Star Bakery</p>
+    </footer>
+
+</body>
+</html>
