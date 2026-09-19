@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Products</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -24,6 +26,10 @@
     </nav>
 
     <main>
+<div id="favorites">
+    <h2> My Favorites</h2>
+    <p>No favorites selected.</p>
+</div>
 
     <section>
         <h2>Breads</h2>
@@ -37,18 +43,24 @@
          alt="Freshly baked bread at North Star Bakery"
          width="400">
 
-        <ul>
+        <ul class="product-list">
             <li>
+             <button type="button" onclick="toggleFavorite('Signature Loaf', this)">♡</button>
                 <strong>Signature Loaf</strong> — A hearty, handcrafted loaf
                 with a crisp crust. Price range: $6–$9.
+               
             </li>
             <li>
+            <button type="button" onclick="toggleFavorite('Country Bread', this)">♡</button>
                 <strong>Country Bread</strong> — A rustic everyday bread
                 with a soft interior. Price range: $5–$8.
+                
             </li>
             <li>
+            <button type="button" onclick="toggleFavorite('Fresh Dinner Rolls', this)">♡</button>
                 <strong>Fresh Dinner Rolls</strong> — Soft rolls perfect for
                 family meals and gatherings. Price range: $5–$10.
+               
             </li>
         </ul>
     </section>
@@ -61,18 +73,23 @@
             satisfying treat.
         </p>
 
-        <ul>
+        <ul class="product-list">
             <li>
+             <button type="button" onclick="toggleFavorite('Butter Croissant', this)">♡</button>
                 <strong>Butter Croissant</strong> — A classic flaky pastry
                 with a golden, buttery crust. Price range: $3–$5.
-            </li>
+               
             <li>
+                <button type="button" onclick="toggleFavorite('Cinnamon Roll', this)">♡</button>
                 <strong>Cinnamon Roll</strong> — A soft pastry filled with
                 cinnamon and topped with a sweet glaze. Price range: $4–$6.
+                
             </li>
             <li>
-                <strong>Seasonal Pastry</strong> — A rotating selection
+                 <button type="button" onclick="toggleFavorite('Seasonal Cookies', this)">♡</button>
+                <strong>Seasonal Cookies</strong> — A rotating selection
                 inspired by seasonal ingredients. Price range: $4–$7.
+               
             </li>
         </ul>
     </section>
@@ -85,18 +102,24 @@
             occasions.
         </p>
 
-        <ul>
+        <ul class="product-list">
             <li>
-                <strong>Celebration Cake</strong> — A classic cake available
+            <button type="button" onclick="toggleFavorite('Birthday Cake', this)">♡</button>
+                <strong>Birthday Cake</strong> — A classic cake available
                 in several flavors and sizes. Price range: $35–$60.
+               
             </li>
             <li>
+            <button type="button" onclick="toggleFavorite('Custom Cake', this)">♡</button>
                 <strong>Custom Cake</strong> — A personalized cake designed
                 for your special event. Price range: $45–$60.
+               
             </li>
             <li>
-                <strong>Small Celebration Cake</strong> — A smaller cake
+            <button type="button" onclick="toggleFavorite('Small Birthday Cake', this)">♡</button>
+                <strong>Small Birthday Cake</strong> — A smaller cake
                 perfect for intimate gatherings. Price range: $20–$40.
+                 
             </li>
         </ul>
     </section>
@@ -104,7 +127,7 @@
 </main>
 
     <footer>
-        <p> 2026 North Star Bakery</p>
+        <p> © 2026 North Star Bakery</p>
     </footer>
 
 </body>

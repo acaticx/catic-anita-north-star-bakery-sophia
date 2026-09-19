@@ -1,3 +1,4 @@
+
 /*overall page design */
 
 body {
@@ -110,6 +111,12 @@ h3 {
     color:#3e2c20;
 }
 
+/* footer */
+
+footer {
+    padding-left: 25px;
+}
+
 /* link interaction */
 
 nav a:hover {
@@ -148,4 +155,62 @@ legend {
         display: flex;
         flex-direction: column;
     }
+}
+.product-list li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.product-list button {
+    margin-right: 8px;
+    background: none;
+    border: none;
+    outline: none;
+    color:rgb(171, 72, 87);
+    font-size: 1.5em;
+} 
+
+#favorites {
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #3e2c20;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    width: 200px;
+    color:#3e2c20;
+    font-size: 16px;
+    z-index: 1000;
+
+}
+#favorites h2 {
+ font-size: 20px;
+ padding-left: 15px;
+}
+
+.favorite-heart {
+    color: rgb(171, 72, 87);
+}
+
+.submit-form {
+    background-color: white;
+    border: 2px solid #3e2c20;
+    border-radius: 5px;
+    color: #3e2c20;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.submit-form:hover {
+    color: white;
+    background-color: rgb(171, 72, 87, 0.8);
+    border: 2px solid #3e2c20;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-left:15px;
+
 }

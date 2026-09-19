@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Contact</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -24,6 +25,8 @@
     </nav>
 
     <main>
+
+        <div id="favorites"></div>
 
         <section>
             <h2>Visit Us</h2>
@@ -49,19 +52,22 @@
                 pre-order. We will follow up with you about your request.
             </p>
 
-            <form>
+            <form id="contact-form">
 
                 <fieldset>
                     <legend>Customer Information</legend>
 
                     <p>
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name">
+                        <span id="name-error"></span>
                     </p>
 
                     <p>
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email">
+                        <span id="email-error"></span>
+                      
                     </p>
 
                     <p>
@@ -83,8 +89,9 @@
 
                     <p>
                         <label>
-                            <input type="radio" name="request-type" value="general-question">
+                            <input type="radio" name="request-type" value="general-question" required>
                             General question
+                            
                         </label>
                     </p>
 
@@ -92,6 +99,7 @@
                         <label for="item-details">Item Details:</label>
                         <br>
                         <textarea id="item-details" name="item-details" rows="5" cols="40" required></textarea>
+                      
                     </p>
 
                     <p>
@@ -103,8 +111,9 @@
                 </fieldset>
 
                 <p>
-                    <button type="submit">Submit Request</button>
+                    <button class="submit-form" type="submit">Submit Request</button>
                 </p>
+                <p id="form-success"></p>
 
             </form>
 
@@ -113,7 +122,7 @@
     </main>
 
     <footer>
-        <p> 2026 North Star Bakery</p>
+    <p> © 2026 North Star Bakery</p>
     </footer>
 
 </body>
